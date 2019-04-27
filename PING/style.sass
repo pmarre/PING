@@ -1,0 +1,134 @@
+$primary-blue: hsl(223, 87%, 63%)
+$secondary-pale-blue:  hsl(223, 100%, 88%)
+$light-red: hsl(354, 100%, 66%)
+$light-grey: hsl(0, 0%, 59%)
+$dark-blue: hsl(209, 33%, 12%)
+$body-copy: 20px "Libre Franklin", sans-serif 
+$font: "Libre Franklin", sans-serif
+
+* 
+  box-sizing: border-box
+
+body 
+  width: 90%
+  margin: 0 auto
+  text-align: center
+
+  @media screen and (min-width: 865px) 
+      width: 80%
+  
+  h1 
+    font: 2rem $font
+    color: $light-grey
+  
+  .bold  
+    font: 2rem $font
+    font-weight: 800
+    color: #000
+    
+  .logo-div
+      width: 100%
+      
+      .logo 
+          width: auto
+          height: 20px
+          margin: 30px auto 0
+
+  span,
+  input
+    font: $body-copy
+    
+  form 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 80%
+    margin: 20px auto
+
+    @media screen and (min-width: 865px) 
+        flex-direction: row
+        justify-content: space-between
+        flex-wrap: wrap
+
+    input 
+      margin: 10px 0
+      
+    input[type="email"]
+      border-radius: 30px
+      padding: 10px 20px
+      border: 1px solid $light-grey
+      width: 100%
+
+      @media screen and (min-width: 865px)
+        width: 70%
+   
+    .error
+      border: 1px solid $light-red !important
+
+    input[type="submit"]   
+      border-radius: 30px
+      padding: 10px 20px
+      background-color: $primary-blue
+      border: none
+      color: #fff
+      font-weight: 600
+      font-size: 16px
+      box-shadow: 5px 5px 5px 5px rgba(0,0,0, .1)
+      transition: transform linear .2s
+      width: 50%
+      margin: 0 auto
+
+      @media screen and (min-width: 865px) 
+        width: 25%
+        margin: auto 0
+        height: 46px
+      
+    input[type="submit"]:hover
+      transform: scale(1.05)
+      transition: transform linear .2s
+      cursor: pointer
+    
+    input:focus 
+        outline: none
+
+  #errorMessage 
+    display: none
+    font-size: .75rem
+    color: $light-red
+    width: 100%
+    margin-bottom: 10px
+
+    @media screen and (min-width: 865px) 
+        width: 70%
+        order: 3
+
+  #mainImage 
+      width: 80vw
+      height: auto
+      margin: 0 auto
+
+      img 
+        width: 100%
+        height: auto
+      
+  i
+      width: 40px
+      height: 40px
+      font-size: 1.25rem
+      line-height: 40px !important
+      border-radius: 50%
+      margin: 20px 5px
+      border: 1px solid $light-grey
+      color: $primary-blue
+    
+      
+  i:hover 
+      background-color: $primary-blue
+      color: white
+      border: 1px solid $primary-blue
+      cursor: pointer
+
+
+
+    
+  

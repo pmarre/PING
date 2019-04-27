@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (min-width: 865px) {
+  body {
+    width: 80%;
+  }
+}
+body h1 {
+  font: 2rem "Libre Franklin", sans-serif;
+  color: #969696;
+}
+body .bold {
+  font: 2rem "Libre Franklin", sans-serif;
+  font-weight: 800;
+  color: #000;
+}
+body .logo-div {
+  width: 100%;
+}
+body .logo-div .logo {
+  width: auto;
+  height: 20px;
+  margin: 30px auto 0;
+}
+body span,
+body input {
+  font: 20px "Libre Franklin", sans-serif;
+}
+body form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 20px auto;
+}
+@media screen and (min-width: 865px) {
+  body form {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+body form input {
+  margin: 10px 0;
+}
+body form input[type=email] {
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 1px solid #969696;
+  width: 100%;
+}
+@media screen and (min-width: 865px) {
+  body form input[type=email] {
+    width: 70%;
+  }
+}
+body form .error {
+  border: 1px solid #ff5263 !important;
+}
+body form input[type=submit] {
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: #4f7df3;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: transform linear 0.2s;
+  width: 50%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 865px) {
+  body form input[type=submit] {
+    width: 25%;
+    margin: auto 0;
+    height: 46px;
+  }
+}
+body form input[type=submit]:hover {
+  transform: scale(1.05);
+  transition: transform linear 0.2s;
+  cursor: pointer;
+}
+body form input:focus {
+  outline: none;
+}
+body #errorMessage {
+  display: none;
+  font-size: 0.75rem;
+  color: #ff5263;
+  width: 100%;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 865px) {
+  body #errorMessage {
+    width: 70%;
+    order: 3;
+  }
+}
+body #mainImage {
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+}
+body #mainImage img {
+  width: 100%;
+  height: auto;
+}
+body i {
+  width: 40px;
+  height: 40px;
+  font-size: 1.25rem;
+  line-height: 40px !important;
+  border-radius: 50%;
+  margin: 20px 5px;
+  border: 1px solid #969696;
+  color: #4f7df3;
+}
+body i:hover {
+  background-color: #4f7df3;
+  color: white;
+  border: 1px solid #4f7df3;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
